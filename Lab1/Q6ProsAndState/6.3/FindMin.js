@@ -10,6 +10,7 @@ export default function FindMin() {
 
     return(
         <View style={style.container}>
+            <Text style={style.title}>Min Value Finder</Text>
             <TextInput style={style.textInput} keyboardType="numeric" 
             onChangeText={number => {setValue(number)}} placeholder="Enter a number"></TextInput>
             <TextInput style={style.textInput} keyboardType="numeric" 

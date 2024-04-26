@@ -15,6 +15,7 @@ export default function SumTwoDigits() {
 
     return (
         <View style = {style.container}>
+            <Text style ={style.tilte}>Sum Two Digits</Text>
             <TextInput style={style.textInput} keyboardType="numeric" value = {number} onChangeText = {text =>{setNumber(text)}} 
             placeholder="Enter a number"></TextInput>
             <Text>Sum of first and last digit is {sum}</Text>

@@ -6,12 +6,14 @@ export default function Display(props){
     function onPress(){
         alert("Success!");
     }
+
     return(
-        <View style={styles.box}>
+        <View style={styles.container}>
+            <Text style = {styles.tilte}>{props.tilte}</Text>
             <Text>Name: {props.name}</Text>
             <Text>Age: {props.age}</Text>
             <Text>Occupation: {props.occupation}</Text>
-            <Button title="Click me" onPress={() =>{onPress()}}/>
+            <Button title="Submit" onPress={() =>{onPress()}}/>
         </View>
     );
 }
